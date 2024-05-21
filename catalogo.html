@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Loja</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #eeeeee;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        header {
+            text-align: right;
+            background-color: #222831;
+        }
+
+        div {
+            text-align: center;
+        }
+
+
+        .logo {
+            height: 300px;
+        }
+
+        h1 a {
+            text-decoration: none;
+            color: #222831;
+        }
+
+        .img {
+            height: 400px;
+            width: 400px;
+            border-radius: 5%;
+        }
+
+        #produtos {
+            display: inline-flex;
+        }
+
+        #produtos section {
+            margin-top: 100px;
+            font-size: 20px;
+            margin-left: 70px;
+            margin-right: 70px;
+            text-align: center;
+            border: #eeeeee solid 3px;
+            border-radius: 5px;
+            transition: all 0.5s ease-out;
+        }
+
+        #produtos section p {
+            font-size: 50px;
+            margin-top: 5px;
+            margin-bottom: -10px;
+        }
+
+        #produtos section:hover {
+            border: #222831 solid 3px;
+            transition-property: border;
+            transition: 0.5s;
+        }
+
+        a {
+            text-decoration: none;
+            color: #222831;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="imagens/logomiku.png" class="mikulogo"> 
+    </header>
+    <nav id="menu">
+        <ul>
+            <a href="index.html"><li>Home</li></a>
+            <a href="catalogo.html"><li>Catálogo</li></a>
+            <a href="portifolio.html"><li>Sobre Nós</li></a>
+        </ul>
+    </nav>
+
+    <div id="section">
+        <nav id="produtos">
+            <a href="onepiece.html">
+                <section>
+                <p>One Piece</p>
+                <img src="imagens/produtos/one piece/zoro.png" class="img">
+                </section>
+            </a>
+            <a href="vocaloid.html">
+                <section>
+                    <p>Vocaloid</p>
+                    <img src="imagens/produtos/vocaloid/miku.png" class="img">
+                </section>
+            </a>
+        </nav>
+        <nav id="produtos">
+            <a href="valorant.html">
+                <section>
+                <p>Valorant</p>
+                <img src="imagens/produtos/valorant/Phoenix.png" class="img">
+                </section>
+            </a>
+            <a href="starrail.html">
+                <section>
+                    <p>Honkai: Star Rail</p>
+                    <img src="imagens/produtos/starrail/sparkle.png" class="img">
+                </section>
+            </a>
+        </nav>
+    </div>
+</body>
+</html>
