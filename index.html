@@ -7,6 +7,7 @@
     <title>The Loja</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 
     <style>
         .img {
@@ -14,7 +15,7 @@
             width: 300px;
         }
 
-        p {
+        #produtos p {
             font-size: 20px;
         }
 
@@ -22,17 +23,14 @@
             margin-left: -50px;
         }
 
-        button {
+        #bo {
+            background-color: #222831;
             height: 25px;
             width: 25px;
             margin: 10px;
             border: none;
             border-radius: 5px;
             transition: all 0.25s ease-out;
-        }
-
-        #bo {
-            background-color: #222831;
         }
 
         #bo:hover {
@@ -48,6 +46,21 @@
     <header>
         <img src="imagens/logomiku.png" class="mikulogo"> 
     </header>
+    <div id="container">
+        <nav id="dados">
+            <p><b>Nome</b></p>
+            <input>
+            <p><b>Sobrenome</b></p>
+            <input>
+            <p><b>E-mail</b></p>
+            <input>
+            <p><b>CPF</b></p>
+            <input>
+            <br>
+            <button onclick="cancela()"><b>cancelar</b></button>
+            <button><b>confirmar</b></button>
+        </nav>
+    </div>
     <nav id="menu">
         <ul>
             <a href="index.html"><li>Home</li></a>
@@ -57,7 +70,6 @@
     </nav>
 
     <h1 style="text-align: center; font-size: 50px; color: #222831; margin-top: 100px;">Destaques</h1>
-    
     <div id="section">
         <nav id="produtos">
             <section>
@@ -65,6 +77,8 @@
                 <img src="imagens/produtos/one piece/zoro.png" class="img" id="destaque">
                 <p id="nome"><b>Zoro</b></p>
                 <p id="preco"><b>R$19,50</b></p>
+                <button id="comprar" onclick="compra()"><b>COMPRAR</b></button>
+                <br>
                 <button id="bo" onclick="pd1()"></button>
                 <button id="bo" onclick="pd2()"></button>
                 <button id="bo" onclick="pd3()"></button>
@@ -72,37 +86,6 @@
             </section>    
         </nav>
     </div>
-
-    <script>
-        function pd1() {
-            document.getElementById("categoria").innerHTML="<b>One Piece</b>"
-            document.getElementById("destaque").src="imagens/produtos/one piece/zoro.png"
-            document.getElementById("nome").innerHTML="<b>Zoro</b>"
-            document.getElementById("preco").innerHTML="<b>R$19,50</b>"
-        }
-
-        function pd2() {
-            document.getElementById("categoria").innerHTML="<b>Vocaloid</b>"
-            document.getElementById("destaque").src="imagens/produtos/vocaloid/miku.png"
-            document.getElementById("nome").innerHTML="<b>Hatsune Miku</b>"
-            document.getElementById("preco").innerHTML="<b>R$2.500.000,00</b>"
-        }
-
-        function pd3() {
-            document.getElementById("categoria").innerHTML="<b>Valorant</b>"
-            document.getElementById("destaque").src="imagens/produtos/valorant/Phoenix.png"
-            document.getElementById("nome").innerHTML="<b>Phoenix</b>"
-            document.getElementById("preco").innerHTML="<b>R$523,50</b>"
-        }
-
-        function pd4() {
-            document.getElementById("categoria").innerHTML="<b>Honkai: Star Rail</b>"
-            document.getElementById("destaque").src="imagens/produtos/starrail/sparkle.png"
-            document.getElementById("nome").innerHTML="<b>Sparkle</b>"
-            document.getElementById("preco").innerHTML="<b>R$66.666,69</b>"
-        }
-
-    </script>
 
 </body>
 </html>

@@ -7,11 +7,27 @@
     <title>The Loja</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
         <img src="imagens/logomiku.png" class="mikulogo">   
     </header>
+    <div id="container">
+        <nav id="dados">
+            <p><b>Nome</b></p>
+            <input>
+            <p><b>Sobrenome</b></p>
+            <input>
+            <p><b>E-mail</b></p>
+            <input>
+            <p><b>CPF</b></p>
+            <input>
+            <br>
+            <button onclick="cancela()"><b>cancelar</b></button>
+            <button><b>confirmar</b></button>
+        </nav>
+    </div>
     <nav id="menu">
         <ul>
             <a href="index.html"><li>Home</li></a>
@@ -23,47 +39,55 @@
     <div id="section">
         <h1><a href=""></a></h1>
         <nav id="produtos">
-                <section>
-                    <img src="imagens/produtos/starrail/fu_xuan.png" class="img">
-                    <p><b>Fu Xuan</b></p>
-                    <p><b>R$476.000,00</b></p>
-                </section>
-                <section>
-                    <img src="imagens/produtos/starrail/qingque.png" class="img">
-                    <p><b>Qingque</b></p>
-                    <p><b>R$800.000,00</b></p>
-                </section>
-                <section>
-                    <img src="imagens/produtos/starrail/sparkle.png" class="img">
-                    <p><b>Sparkle</b></p>
-                    <p><b>R$66.666,69</b></p>
-                </section>
-                <section>
-                    <img src="imagens/produtos/starrail/tingyun.png" class="img">
-                    <p><b>Tingyun</b></p>
-                    <p><b>R$10.000,00</b></p>
-                </section>
+            <section>
+                <img src="imagens/produtos/starrail/fu_xuan.png" class="img">
+                <p><b>Fu Xuan</b></p>
+                <p><b>R$476.000,00</b></p>
+                <button id="comprar" onclick="compra()"><b>COMPRAR</b></button>
+            </section>
+            <section>
+                <img src="imagens/produtos/starrail/qingque.png" class="img">
+                <p><b>Qingque</b></p>
+                <p><b>R$800.000,00</b></p>
+                <button id="comprar" onclick="compra()"><b>COMPRAR</b></button>
+            </section>
+            <section>
+                <img src="imagens/produtos/starrail/sparkle.png" class="img">
+                <p><b>Sparkle</b></p>
+                <p><b>R$66.666,69</b></p>
+                <button id="comprar" onclick="compra()"><b>COMPRAR</b></button>
+            </section>
+               <section>
+                <img src="imagens/produtos/starrail/tingyun.png" class="img">
+                <p><b>Tingyun</b></p>
+                <p><b>R$10.000,00</b></p>
+                <button id="comprar" onclick="compra()"><b>COMPRAR</b></button>
+            </section>
         </nav>
         <nav id="produtos">
             <section>
                 <img src="imagens/produtos/starrail/embebidor_lunae.png" class="img">
                 <p><b>Embebidor Lunae</b></p>
                 <p><b>R$40,00</b></p>
+                <button id="comprar" onclick="compra()"><b>COMPRAR</b></button>
             </section>
             <section>
                 <img src="imagens/produtos/starrail/kafka.png" class="img">
                 <p><b>Kafka</b></p>
                 <p><b>R$0,10</b></p>
+                <button id="comprar" onclick="compra()"><b>COMPRAR</b></button>
             </section>
             <section>
                 <img src="imagens/produtos/starrail/jingliu.png" class="img">
                 <p><b>Jingliu</b></p>
                 <p><b>R$150,00</b></p>
+                <button id="comprar" onclick="compra()"><b>COMPRAR</b></button>
             </section>
             <section>
                 <img src="imagens/produtos/starrail/march.png" class="img">
                 <p><b>7 de Março</b></p>
                 <p><b>R$7,05</b></p>
+                <button id="comprar" onclick="compra()"><b>COMPRAR</b></button>
             </section>
         </nav>
         <nav id="produtos">
@@ -71,6 +95,7 @@
                 <img src="imagens/produtos/starrail/bronya.png" class="img">
                 <p><b>Bronya</b></p>
                 <p><b>R$1.000.000,00</b></p>
+                <button id="comprar" onclick="compra()"><b>COMPRAR</b></button>
             </section>
         </nav>  
     </div>
