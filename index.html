@@ -7,6 +7,42 @@
     <title>The Loja</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        .img {
+            height: 300px;
+            width: 300px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        #section {
+            margin-left: -50px;
+        }
+
+        button {
+            height: 25px;
+            width: 25px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            transition: all 0.25s ease-out;
+        }
+
+        #bo {
+            background-color: #222831;
+        }
+
+        #bo:hover {
+            transition: border, background;
+            transition: 0.25s;
+            background-color: #00ADB5;
+            box-shadow: #00ADB5 0px 1px 5px;
+        }
+
+    </style>
 </head>
 <body>
     <header>
@@ -25,31 +61,48 @@
     <div id="section">
         <nav id="produtos">
             <section>
-                <p><b>One Piece</b></p>
-                <img src="imagens/produtos/one piece/zoro.png" class="img">
-                <p><b>Zoro</b></p>
-                <p><b>R$19,50</b></p>
-            </section>
-            <section>
-                <p><b>Vocaloid</b></p>
-                <img src="imagens/produtos/vocaloid/miku.png" class="img">
-                <p><b>Hatsune Miku</b></p>
-                <p><b>R$2.500.000,00</b></p>
-            </section>
-            <section>
-                <p><b>Valorant</b></p>
-                <img src="imagens/produtos/valorant/Phoenix.png" class="img"> 
-                <p><b>Phoenix</b></p>
-                <p><b>R$523,50</b></p>
-            </section>
-            <section>
-                <p><b>Honkai: Star Rail</b></p>
-                <img src="imagens/produtos/starrail/sparkle.png" class="img"> 
-                <p><b>Sparkle</b></p>
-                <p><b>R$66.666,69</b></p>
-            </section>         
+                <p id="categoria"><b>One Piece</b></p>
+                <img src="imagens/produtos/one piece/zoro.png" class="img" id="destaque">
+                <p id="nome"><b>Zoro</b></p>
+                <p id="preco"><b>R$19,50</b></p>
+                <button id="bo" onclick="pd1()"></button>
+                <button id="bo" onclick="pd2()"></button>
+                <button id="bo" onclick="pd3()"></button>
+                <button id="bo" onclick="pd4()"></button>
+            </section>    
         </nav>
     </div>
+
+    <script>
+        function pd1() {
+            document.getElementById("categoria").innerHTML="<b>One Piece</b>"
+            document.getElementById("destaque").src="imagens/produtos/one piece/zoro.png"
+            document.getElementById("nome").innerHTML="<b>Zoro</b>"
+            document.getElementById("preco").innerHTML="<b>R$19,50</b>"
+        }
+
+        function pd2() {
+            document.getElementById("categoria").innerHTML="<b>Vocaloid</b>"
+            document.getElementById("destaque").src="imagens/produtos/vocaloid/miku.png"
+            document.getElementById("nome").innerHTML="<b>Hatsune Miku</b>"
+            document.getElementById("preco").innerHTML="<b>R$2.500.000,00</b>"
+        }
+
+        function pd3() {
+            document.getElementById("categoria").innerHTML="<b>Valorant</b>"
+            document.getElementById("destaque").src="imagens/produtos/valorant/Phoenix.png"
+            document.getElementById("nome").innerHTML="<b>Phoenix</b>"
+            document.getElementById("preco").innerHTML="<b>R$523,50</b>"
+        }
+
+        function pd4() {
+            document.getElementById("categoria").innerHTML="<b>Honkai: Star Rail</b>"
+            document.getElementById("destaque").src="imagens/produtos/starrail/sparkle.png"
+            document.getElementById("nome").innerHTML="<b>Sparkle</b>"
+            document.getElementById("preco").innerHTML="<b>R$66.666,69</b>"
+        }
+
+    </script>
 
 </body>
 </html>
